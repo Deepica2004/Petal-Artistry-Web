@@ -1,0 +1,198 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+/* Header styles */
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0 20px;
+}
+
+/* Home section styles */
+.home {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.home h3 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home span {
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.home p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 30px;
+}
+
+.home .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.home .btn:hover {
+  background-color: #555;
+}
+
+/* About section styles */
+.about {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.about .heading span {
+  color: #333;
+}
+
+.about .row {
+  margin-top: 50px;
+}
+
+.about h3 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.about .btn {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 30px;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.about .btn:hover {
+  background-color: #555;
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  padding: 50px 0;
+  text-align: center;
+}
+
+.footer .box {
+  margin-bottom: 30px;
+}
+
+.footer .box h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.footer .box a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+.footer .credit {
+  margin-top: 30px;
+  font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navbar {
+    display: none;
+    position: fixed;
+    top: 80px;
+    left: 0;
+    right: 0;
+    background-color: #333;
+    padding: 10px 0;
+    flex-direction: column;
+  }
+
+  .navbar.active {
+    display: flex;
+  }
+
+  .navbar a {
+    padding: 10px 20px;
+    border-bottom: 1px solid #555;
+  }
+
+  .navbar a:last-child {
+    border-bottom: none;
+  }
+
+  .home h3 {
+    font-size: 2rem;
+  }
+
+  .home p {
+    font-size: 1rem;
+  }
+
+  .about h3 {
+    font-size: 1.5rem;
+  }
+
+  .about p {
+    font-size: 1rem;
+  }
+
+  .footer .box a {
+    font-size: 0.9rem;
+  }
+}
